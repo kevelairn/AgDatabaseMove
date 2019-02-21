@@ -7,3 +7,5 @@ jobs:
     steps:
       - checkout
       - run: find .
+      - run: dotnet build
+      - run: dotnet test --no-build tests/AgDatabaseMove.Unit
